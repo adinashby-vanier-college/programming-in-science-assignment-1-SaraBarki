@@ -62,21 +62,31 @@ print("*\n**\n***\n****\n*****")
 
 # Function 5: While Loop – Counting Multiples of 3
 # This function should return a list of numbers from 1 to limit, replacing multiples of 3 with "Multiple of 3".
+# def count_multiples_of_3(limit):
+#     result = ''
+#     for i in range(1, limit+1):
+#         if i % 3 == 0:
+#             result += 'Multiple of 3' + '\n'
+#         else:
+#             result += str(i) + '\n'
+#     return result.rstrip()
+# print(count_multiples_of_3(5))
+#     #i % 3 != 0
+
+# print("1\n2\nMultiple of 3\n4\n5\nMultiple of 3\n7\n8\nMultiple of 3\n10\n11")
+
 def count_multiples_of_3(limit):
     result = ''
-    for i in range(1, limit+1):
-        if i % 3 == 0:
+    x = 1
+    while x <= limit:
+        if x % 3 == 0:
             result += 'Multiple of 3' + '\n'
-        else:
-            result += str(i) + '\n'
+        elif x % 3 != 0:
+            result += str(x) + '\n'
+        x = x + 1
     return result.rstrip()
-print(count_multiples_of_3(5))
-    #i % 3 != 0
 
-print("1\n2\nMultiple of 3\n4\n5\nMultiple of 3\n7\n8\nMultiple of 3\n10\n11")
-
-
-
+print(count_multiples_of_3(11))
 
 
 # Function 6: Sum of Even Numbers in a Range
