@@ -64,7 +64,7 @@ print("*\n**\n***\n****\n*****")
 # This function should return a list of numbers from 1 to limit, replacing multiples of 3 with "Multiple of 3".
 def count_multiples_of_3(limit):
     result = ''
-    for i in range(1, limit + 1):
+    for i in range(1, limit+1):
         if i % 3 == 0:
             result += 'Multiple of 3' + '\n'
         else:
@@ -73,7 +73,7 @@ def count_multiples_of_3(limit):
 print(count_multiples_of_3(5))
     #i % 3 != 0
 
-# print("1\n2\nMultiple of 3\n4\n5\nMultiple of 3\n7\n8\nMultiple of 3\n10\n11")
+print("1\n2\nMultiple of 3\n4\n5\nMultiple of 3\n7\n8\nMultiple of 3\n10\n11")
 
 
 
@@ -82,6 +82,10 @@ print(count_multiples_of_3(5))
 # Function 6: Sum of Even Numbers in a Range
 # This function should calculate and return the sum of even numbers within a given range.
 def sum_of_even_numbers(start, end):
-    # TODO: Implement this function
-    pass  # Replace with your code
-print('HELLO')
+    result = 0
+    for i in range(start, end + 1) :
+        if i % 2 == 0:
+            result += i
+    return result
+
+print(sum_of_even_numbers(1,10))
